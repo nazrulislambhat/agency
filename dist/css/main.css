@@ -22,6 +22,10 @@ select {
 :root {
   --c-color-primary: #ef6d58;
   --c-color-secondary: #b550f8;
+  --c-color-trinary: #f7cc47;
+  --c-color-bg1: #32334c;
+  --c-color-bg2: #8082a5;
+  --c-color-white2: #dfe0e9;
   --c-white: #ffffff;
   --c-black: #000101;
   --c-black-50: #0d1321;
@@ -47,20 +51,6 @@ select {
   --f-primary: "NotoRegular";
   --f-primary-bold: "NotoBold";
   --f-secondary: "Rubik";
-}
-
-.heading {
-  color: blue;
-}
-@media (min-width: 576px) {
-  .heading {
-    color: red;
-  }
-}
-@media (min-width: 768px) {
-  .heading {
-    color: green;
-  }
 }
 
 .container-wrapper {
