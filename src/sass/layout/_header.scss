@@ -1,3 +1,9 @@
 .heading {
-  
+  color: blue;
+  @include breakpoint('small') {
+    color: red;
+  }
+  @include breakpoint('medium') {
+    color: green;
+  }
 }

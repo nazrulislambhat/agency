@@ -49,6 +49,20 @@ select {
   --f-secondary: "Rubik";
 }
 
+.heading {
+  color: blue;
+}
+@media (min-width: 576px) {
+  .heading {
+    color: red;
+  }
+}
+@media (min-width: 768px) {
+  .heading {
+    color: green;
+  }
+}
+
 .container-wrapper {
   background-color: var(--c-white);
 }
