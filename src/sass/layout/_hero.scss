@@ -4,9 +4,12 @@
   justify-content: space-between;
   align-items: center;
   font-family: var(--f-primary);
+  padding-top: 56px;
+  padding-bottom: 56px;
   @include breakpoint('mobile') {
     @include boxed-m;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
     flex-direction: column-reverse;
     .info {
       &__sub {
@@ -31,14 +34,31 @@
         color: rgba(255, 255, 255, 0.64);
         margin-bottom: 16px;
       }
+      .info-buttons {
+        display: flex;
+
+        @include breakpoint('mobile') {
+          .info__cta-transparent {
+            margin-left: 50px;
+          }
+        }
+      }
       &__cta {
         @include button-primary;
+        a {
+          &:hover {
+            border-bottom: 2px solid var(--color-white);
+          }
+        }
       }
       &__cta-transparent {
         @include button-transparent;
         border: none;
         a {
           text-transform: capitalize;
+          &:hover {
+            border-bottom: 2px solid var(--color-1);
+          }
         }
       }
     }
