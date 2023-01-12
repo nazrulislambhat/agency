@@ -176,10 +176,14 @@ select {
   justify-content: space-between;
   align-items: center;
   font-family: var(--f-primary);
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 @media (min-width: 320px) {
   .hero {
     padding: 0px 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     flex-direction: column-reverse;
   }
   .hero .info__sub {
