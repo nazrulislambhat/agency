@@ -178,99 +178,92 @@ select {
   font-family: var(--f-primary);
   padding-top: 56px;
   padding-bottom: 56px;
+  padding: 0px 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  flex-direction: column-reverse;
 }
-@media (min-width: 320px) {
-  .hero {
-    padding: 0px 24px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    flex-direction: column-reverse;
-  }
-  .hero .info__sub {
-    text-transform: uppercase;
-    color: var(--color-1);
-    font-size: 14px;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-    font-weight: 400;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-  }
-  .hero .info__title {
-    font-size: 56px;
-    line-height: 64px;
-    font-weight: 800;
-    color: var(--color-white);
-    overflow: auto;
-    font-weight: 800;
-    letter-spacing: -1px;
-    margin-bottom: 12px;
-  }
-  .hero .info__description {
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.64);
-    margin-bottom: 16px;
-  }
+.hero .info__sub {
+  text-transform: uppercase;
+  color: var(--color-1);
+  font-size: 14px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.hero .info__title {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: var(--color-white);
+  overflow: auto;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+.hero .info__description {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.64);
+  margin-bottom: 16px;
+}
+.hero .info .info-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
   .hero .info .info-buttons {
-    display: flex;
+    justify-content: flex-start;
   }
 }
-@media (min-width: 320px) and (min-width: 320px) {
-  .hero .info .info-buttons .info__cta-transparent {
-    margin-left: 50px;
-  }
+.hero .info__cta {
+  border: none;
+  padding: 18px 36px;
+  background-color: var(--color-1);
+  cursor: pointer;
+  border-radius: 6px;
 }
-@media (min-width: 320px) {
-  .hero .info__cta {
-    border: none;
-    padding: 18px 36px;
-    background-color: var(--color-1);
-    cursor: pointer;
-    border-radius: 6px;
-  }
-  .hero .info__cta a {
-    color: var(--color-white);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: var(--f-primary);
-    text-align: center;
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .hero .info__cta a:hover {
-    border-bottom: 2px solid var(--color-white);
-  }
+.hero .info__cta a {
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: var(--f-primary);
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
 }
-@media (min-width: 320px) {
-  .hero .info__cta-transparent {
-    background-color: transparent;
-    padding: 18px 36px;
-    border: 1px solid rgba(255, 255, 255, 0.295743);
-    border-radius: 6px;
-    box-sizing: border-box;
-    cursor: pointer;
-    border: none;
-  }
-  .hero .info__cta-transparent a {
-    color: var(--color-white);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: var(--f-primary);
-    text-align: center;
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .hero .info__cta-transparent a {
-    text-transform: capitalize;
-  }
-  .hero .info__cta-transparent a:hover {
-    border-bottom: 2px solid var(--color-1);
-  }
+.hero .info__cta a:hover {
+  border-bottom: 2px solid var(--color-white);
+}
+.hero .info__cta-transparent {
+  background-color: transparent;
+  padding: 18px 36px;
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+}
+.hero .info__cta-transparent a {
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: var(--f-primary);
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+.hero .info__cta-transparent a {
+  text-transform: capitalize;
+}
+.hero .info__cta-transparent a:hover {
+  border-bottom: 2px solid var(--color-1);
 }
 @media (min-width: 1024px) {
   .hero {

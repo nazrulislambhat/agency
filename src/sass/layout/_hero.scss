@@ -6,59 +6,55 @@
   font-family: var(--f-primary);
   padding-top: 56px;
   padding-bottom: 56px;
-  @include breakpoint('mobile') {
-    @include boxed-m;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    flex-direction: column-reverse;
-    .info {
-      &__sub {
-        text-transform: uppercase;
-        color: var(--color-1);
-        font-size: 14px;
-        @include heading-5;
-        font-weight: 400;
-        letter-spacing: 3px;
-        margin-bottom: 20px;
+  @include boxed-m;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  flex-direction: column-reverse;
+  .info {
+    &__sub {
+      text-transform: uppercase;
+      color: var(--color-1);
+      font-size: 14px;
+      @include heading-5;
+      font-weight: 400;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      @include heading-2;
+      color: var(--color-white);
+      overflow: auto;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    &__description {
+      @include text;
+      color: rgba(255, 255, 255, 0.64);
+      margin-bottom: 16px;
+    }
+    .info-buttons {
+      display: flex;
+      justify-content: space-between;
+      @include breakpoint('desktop') {
+        justify-content: flex-start;
       }
-      &__title {
-        @include heading-2;
-        color: var(--color-white);
-        overflow: auto;
-        font-weight: 800;
-        letter-spacing: -1px;
-        margin-bottom: 12px;
-      }
-      &__description {
-        @include text;
-        color: rgba(255, 255, 255, 0.64);
-        margin-bottom: 16px;
-      }
-      .info-buttons {
-        display: flex;
-
-        @include breakpoint('mobile') {
-          .info__cta-transparent {
-            margin-left: 50px;
-          }
+    }
+    &__cta {
+      @include button-primary;
+      a {
+        &:hover {
+          border-bottom: 2px solid var(--color-white);
         }
       }
-      &__cta {
-        @include button-primary;
-        a {
-          &:hover {
-            border-bottom: 2px solid var(--color-white);
-          }
-        }
-      }
-      &__cta-transparent {
-        @include button-transparent;
-        border: none;
-        a {
-          text-transform: capitalize;
-          &:hover {
-            border-bottom: 2px solid var(--color-1);
-          }
+    }
+    &__cta-transparent {
+      @include button-transparent;
+      border: none;
+      a {
+        text-transform: capitalize;
+        &:hover {
+          border-bottom: 2px solid var(--color-1);
         }
       }
     }
