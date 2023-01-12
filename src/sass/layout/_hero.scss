@@ -1,0 +1,51 @@
+.hero {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--f-primary);
+  @include breakpoint('mobile') {
+    @include boxed-m;
+
+    flex-direction: column-reverse;
+    .info {
+      &__sub {
+        text-transform: uppercase;
+        color: var(--color-1);
+        font-size: 14px;
+        @include heading-5;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      &__title {
+        @include heading-2;
+        color: var(--color-white);
+        overflow: auto;
+        font-weight: 800;
+        letter-spacing: -1px;
+        margin-bottom: 12px;
+      }
+      &__description {
+        @include text;
+        color: rgba(255, 255, 255, 0.64);
+        margin-bottom: 16px;
+      }
+      &__cta {
+        @include button-primary;
+      }
+      &__cta-transparent {
+        @include button-transparent;
+        border: none;
+        a {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  @include breakpoint('desktop') {
+    @include boxed-d;
+    height: 100vh;
+    flex-direction: row;
+  }
+}

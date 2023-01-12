@@ -50,28 +50,43 @@
   font-weight: 400;
 }
 @mixin button-transparent {
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--f-primary);
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+  }
   background-color: transparent;
   padding: 18px 36px;
   border: 1px solid rgba(255, 255, 255, 0.295743);
-  color: #f2f2f2;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-family: var(--f-primary);
-  font-size: 14px;
   border-radius: 6px;
-  text-align: center;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 6px;
+}
+@mixin boxed-d {
+  padding: 0px 135px;
+}
+@mixin boxed-m {
+  padding: 0px 24px;
 }
 @mixin button-primary {
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: var(--f-primary);
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  border: none;
   padding: 18px 36px;
   background-color: var(--color-1);
-  font-weight: 900;
-  font-size: 14px;
-  color: var(--color-white);
-  text-transform: uppercase;
-  font-family: var(--f-primary);
   cursor: pointer;
   border-radius: 6px;
 }
