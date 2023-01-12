@@ -34,14 +34,31 @@
         color: rgba(255, 255, 255, 0.64);
         margin-bottom: 16px;
       }
+      .info-buttons {
+        display: flex;
+
+        @include breakpoint('mobile') {
+          .info__cta-transparent {
+            margin-left: 50px;
+          }
+        }
+      }
       &__cta {
         @include button-primary;
+        a {
+          &:hover {
+            border-bottom: 2px solid var(--color-white);
+          }
+        }
       }
       &__cta-transparent {
         @include button-transparent;
         border: none;
         a {
           text-transform: capitalize;
+          &:hover {
+            border-bottom: 2px solid var(--color-1);
+          }
         }
       }
     }

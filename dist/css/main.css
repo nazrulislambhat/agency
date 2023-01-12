@@ -214,6 +214,16 @@ select {
     color: rgba(255, 255, 255, 0.64);
     margin-bottom: 16px;
   }
+  .hero .info .info-buttons {
+    display: flex;
+  }
+}
+@media (min-width: 320px) and (min-width: 320px) {
+  .hero .info .info-buttons .info__cta-transparent {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 320px) {
   .hero .info__cta {
     border: none;
     padding: 18px 36px;
@@ -231,6 +241,11 @@ select {
     font-size: 14px;
     line-height: 14px;
   }
+  .hero .info__cta a:hover {
+    border-bottom: 2px solid var(--color-white);
+  }
+}
+@media (min-width: 320px) {
   .hero .info__cta-transparent {
     background-color: transparent;
     padding: 18px 36px;
@@ -252,6 +267,9 @@ select {
   }
   .hero .info__cta-transparent a {
     text-transform: capitalize;
+  }
+  .hero .info__cta-transparent a:hover {
+    border-bottom: 2px solid var(--color-1);
   }
 }
 @media (min-width: 1024px) {
