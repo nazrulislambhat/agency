@@ -72,18 +72,8 @@
   }
   &__cta {
     border: none;
-    background-color: transparent;
-    padding: 18px 35px;
-    border: 1px solid rgba(255, 255, 255, 0.295743);
-    color: #f2f2f2;
-    text-transform: uppercase;
     display: none;
-    font-weight: 900;
-    font-family: var(--f-primary);
-    font-size: 14px;
-    border-radius: 6px;
-    text-align: center;
-    box-sizing: border-box;
+    @include button-transparent;
     @include breakpoint('desktop') {
       display: block;
     }
