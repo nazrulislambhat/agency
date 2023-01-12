@@ -6,40 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agency</title>
     <link rel="stylesheet" href="/dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <img src="/img/logo.png" class="header__logo" alt="site logo" />
       <nav class="header__menu" id="menu">
-        <ul class="menu-items">
+        <ul class="menu-items animate__animated animate__fadeInDown">
           <li class="menu-item"><a href="/home">Home</a></li>
           <li class="menu-item"><a href="/services">Services</a></li>
           <li class="menu-item"><a href="/pricing">Pricing</a></li>
           <li class="menu-item"><a href="/blog">Blog</a></li>
         </ul>
       </nav>
-      <button class="header__cta" type="button"><a href="#">Contact</a></button>
+      <button
+        class="header__cta animate__animated animate__fadeInDown"
+        type="button"
+      >
+        <a href="#">Contact</a>
+      </button>
       <button class="header__toggle" type="button" id="toggle"></button>
     </header>
     <main>
       <div class="hero">
         <div class="info">
-          <h5 class="info__sub">Modern Studio</h5>
-          <h1 class="info__title">We’re Help To Build Your Dream Project</h1>
-          <p class="info__description">
+          <h5 class="info__sub animate__animated animate__fadeInUp">Modern Studio</h5>
+          <h1 class="info__title animate__animated animate__fadeInUp">We’re Help To Build Your Dream Project</h1>
+          <p class="info__description animate__animated animate__fadeInUp">
             Agency provides a full service range including technical skills,
             design, business understanding.
           </p>
           <div class="info-buttons">
-            <button class="info__cta">
+            <button class="info__cta animate__animated animate__pulse">
               <a href="/how-we-work">How We Work</a>
             </button>
-            <button class="info__cta-transparent">
+            <button class="info__cta-transparent animate__animated animate__pulse">
               <a href="/contact-us">Contact Us</a>
             </button>
           </div>
         </div>
-        <div class="hero__image"><img src="img/pic copy.png" /></div>
+        <div class="hero__image animate__animated animate__fadeInUp"><img src="img/pic copy.png" /></div>
       </div>
     </main>
   </body>
